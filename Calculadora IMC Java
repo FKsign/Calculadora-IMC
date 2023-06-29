@@ -1,0 +1,18 @@
+// Calculadora de IMC (Índice de Massa Corporal)
+
+// Função para calcular o IMC
+function calcularIMC(peso, altura) {
+  var alturaMetros = altura / 100;
+  var imc = peso / (alturaMetros * alturaMetros);
+  return imc.toFixed(2); // Retorna o valor do IMC com duas casas decimais
+}
+
+// Dados de exemplo
+var peso = 70; // em kg
+var altura = 175; // em cm
+
+// Chama a função calcularIMC e armazena o resultado
+var meuIMC = calcularIMC(peso, altura);
+
+// Exibe o resultado
+console.log("Meu IMC é: " + meuIMC);
